@@ -1,4 +1,4 @@
-#deque
+#deque (Double Ended Queue)
 
 from collections import deque
 
