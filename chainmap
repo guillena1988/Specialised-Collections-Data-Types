@@ -4,15 +4,32 @@ from collections import ChainMap
 
 A = { 1:'edureka', 2: 'python'}
 B = { 3: 'data science', 4: 'AI'}
+C = { 5: 'Geeks', 6: 'For Geeks'}
 
 a1 = ChainMap (A, B)
+a2 = a1.new_child(C)
+
 print(a1)
+print(list(a1.keys()))
+print(list(a1.values()))
+print(a1.maps)
+print(a2)
+
+a1.maps = reversed(a1.maps) # not sure if code is working
+print(a1.maps) 
 
 
 # Access Operations
+
 # keys() :- This function is used to display all the keys of all the dictionaries in ChainMap.
+# print (list(a1.keys()))
+
 # values() :- This function is used to display values of all the dictionaries in ChainMap.
+# print (list(a1.values()))
+
 # maps() :- This function is used to display keys with corresponding values of all the dictionaries in ChainMap.
+# print (a1.maps)
+
 
 # Manipulating Operations
 # new_child() :- This function adds a new dictionary in the beginning of the ChainMap.
