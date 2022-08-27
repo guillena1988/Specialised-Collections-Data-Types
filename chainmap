@@ -1,0 +1,19 @@
+# Chainmap - dictionary like class for creating a single view of multiple mappins
+
+from collections import ChainMap
+
+A = { 1:'edureka', 2: 'python'}
+B = { 3: 'data science', 4: 'AI'}
+
+a1 = ChainMap (A, B)
+print(a1)
+
+
+# Access Operations
+# keys() :- This function is used to display all the keys of all the dictionaries in ChainMap.
+# values() :- This function is used to display values of all the dictionaries in ChainMap.
+# maps() :- This function is used to display keys with corresponding values of all the dictionaries in ChainMap.
+
+# Manipulating Operations
+# new_child() :- This function adds a new dictionary in the beginning of the ChainMap.
+# reversed() :- This function reverses the relative ordering of dictionaries in the ChainMap.
