@@ -1,5 +1,16 @@
+#code1
+
 from collections import namedtuple
 
 a = namedtuple('courses', 'name, technology')
 s = a ('data science', 'python')
 print(s)
+
+#code2
+
+from collections import namedtuple
+
+Animal = namedtuple('Animal', 'name age type')
+perry = Animal(name="perry", age=31, type="cat")
+
+print(perry)
