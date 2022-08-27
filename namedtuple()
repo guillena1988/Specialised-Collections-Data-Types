@@ -1,5 +1,5 @@
 #code1
-
+#output1
 from collections import namedtuple
 
 a = namedtuple('courses', 'name, technology')
@@ -7,10 +7,24 @@ s = a ('data science', 'python')
 print(s)
 
 #code2
-
+#output2
 from collections import namedtuple
 
 Animal = namedtuple('Animal', 'name age type')
 perry = Animal(name="perry", age=31, type="cat")
-
 print(perry)
+
+#code3
+#output3
+Animal = namedtuple('Animal', 'name age type')
+perry = Animal(name="perry", age=31, type="cat")
+print(perry[1])
+
+#code4
+# as dictionary
+#output4
+
+Animal = namedtuple('Animal', 'name age type')
+vet1 = Animal(name="perry", age=31, type="cat")
+perry._asdict()
+print(vet1)
