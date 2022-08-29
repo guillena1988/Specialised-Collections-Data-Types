@@ -1,0 +1,10 @@
+from collections import defaultdict
+
+d = defaultdict(int)
+
+d[1] = 'python'
+d[2] = 'edureka'
+
+print(d[1])
+print(d[3]) #not found on dict #doesn't show error
+print(d) #adds line 9, after it encountered missing key or value
